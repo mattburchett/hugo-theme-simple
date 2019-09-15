@@ -3,19 +3,19 @@
 
 name = "Barrymarries"
 license = "MIT"
-licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+licenselink = "https://github.com/barry-smithjr/hugo-theme-barrymarries/blob/master/LICENSE"
 description = ""
-homepage = "http://example.com/"
+homepage = "https://barrymarries.com/"
 tags = []
 features = []
 min_version = "0.41"
 
 [author]
-  name = ""
-  homepage = ""
+  name = "Barry Smith"
+  homepage = "https://www.barrysmith.me"
 
 # If porting an existing theme
 [original]
-  name = ""
-  homepage = ""
-  repo = ""
+  name = "Bare"
+  homepage = "https://startbootstrap.com/templates/bare"
+  repo = "https://github.com/BlackrockDigital/startbootstrap-bare"
