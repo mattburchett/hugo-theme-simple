@@ -1,6 +1,17 @@
    <footer class="footer mt-auto py-3">
       <div class="container">
-        <span class="text-muted">Content &copy; 2019, Barry Smith</span>
+        <div class="row">
+          {{ if .Site.Params.copyrighthtml }}
+          <div class="col-sm">
+              <span class="text-muted text-center">{{.Site.Params.CopyrightHTML | safeHTML}}</span>
+          </div>
+          {{ end }}
+          <div class="col-sm">
+            <!-- fill later -->
+          </div>
+          <div class="col-sm">
+              <span class="text-muted text-center"><a class="nav-link" href="https://www.hrc.org/"><i class="far fa-heart"></i> always wins</a></span>
+          </div>
       </div>
    </footer>
    <!-- Bootstrap core JavaScript -->
