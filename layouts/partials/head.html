@@ -14,10 +14,13 @@
     
   <!-- footer -->
   <link rel="stylesheet" href="{{"css/footer.css" | relURL }}" />
-    
+
+  <!-- animate.css -->
+  <link rel="stylesheet" href="{{"css/animate.css" | relURL }}" />
+
   <!-- Font Awesome -->
-  {{ if isset .Site.Params "faprourl" }}
-  <script src="{{.Site.Params.faprourl}}" crossorigin="anonymous"></script>
+  {{ if isset .Site.Params "fa_pro_url" }}
+  <script src="{{.Site.Params.fa_pro_url}}" crossorigin="anonymous"></script>
   {{ else }}
   <script src="https://kit.fontawesome.com/40801c57b2.js" crossorigin="anonymous"></script>
   {{ end }}
