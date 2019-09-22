@@ -12,7 +12,7 @@
           <div class="col-sm">
               <span class="text-muted text-center"><a class="nav-link" href="https://www.hrc.org/">
                   {{ $env := getenv "FA_PRO_URL" }}
-  {{ if not (eq $env "" ) }}
+                  {{ if not (eq $env "" ) }}
                   <i class="fad fa-heart"></i>
                   {{ else}}
                   <i class="far fa-heart"></i>
