@@ -19,8 +19,9 @@
   <link rel="stylesheet" href="{{"css/animate.css" | relURL }}" />
 
   <!-- Font Awesome -->
-  {{ if isset .Site.Params "fa_pro_url" }}
-  <script src="{{.Site.Params.fa_pro_url}}" crossorigin="anonymous"></script>
+  {{ $env := getenv "FA_PRO_URL" }}
+  {{ if not (eq $env "" ) }}
+  <script src="{{ getenv "FA_PRO_URL" }}" crossorigin="anonymous"></script>
   {{ else }}
   <script src="https://kit.fontawesome.com/40801c57b2.js" crossorigin="anonymous"></script>
   {{ end }}
