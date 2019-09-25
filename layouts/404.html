@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+    {{ $env := getenv "FA_PRO_URL" }}
+    {{ if not (eq $env "" ) }}
+    <i class="fad fa-ghost"></i>
+    {{ else}}
+    <i class="far fa-ghost"></i>
+    {{ end }} &nbsp; always wins</a>
+  </div>
+</div>
