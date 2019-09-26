@@ -23,7 +23,7 @@
   {{ if not (eq $env "" ) }}
   <script src="{{ getenv "FA_PRO_URL" }}" crossorigin="anonymous"></script>
   {{ else }}
-  <script src="https://kit.fontawesome.com/40801c57b2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="{{"css/fontawesome.min.css" | relURL }}" />
   {{ end }}
 
 </head>
