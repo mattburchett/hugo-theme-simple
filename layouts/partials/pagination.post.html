@@ -1,0 +1,14 @@
+<nav aria-label="page-pagination">
+  <ul class="pagination">
+    {{ with .PrevInSection }}
+    <li class="page-item">
+        <a href="{{ .Permalink }}" class="page-link" aria-label="{{ .Title }}">{{.Title}}</a>
+    </li>
+    {{ end }}
+    {{ with .NextInSection }}
+    <li class="page-item">
+        <a href="{{ .Permalink }}" class="page-link" aria-label="{{ .Title }}">{{.Title}}</a>
+    </li>
+    {{ end }}
+</ul>
+</nav>
